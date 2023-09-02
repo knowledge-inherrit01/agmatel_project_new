@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+
+    <style>
+
+        
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+
+        
+
+        .body{
+            margin-left: 8%;
+            margin-top: 5%;
+        }
+        h3{
+            font-size: 25px;
+            
+        }
+
+        pre{
+           
+            font-family: sans-serif;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        
+        .head{
+            float: left;
+            width: 70%;
+            border: 1px solid black;
+            height: 132px;
+            font-size: 100%;
+            padding-left: 2%;
+            border-right: none;
+        
+        }
+
+        .headB{
+            float: left;
+            border: 1px solid black;
+            height: 132px;
+            width: 20%;
+            border-left: none;
+
+          
+        }
+
+        .headB img{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .content{
+            clear: both;
+            text-transform: uppercase;
+            font-size: 80%;
+            text-align: center;
+            padding-top:2%;
+        }
+
+        .table{
+           margin-left: 8%;
+           margin-top: 2%;
+        }
+
+        td{
+            text-align: left;
+            font-size: 100%;
+            font-weight: bold;
+        }
+
+        .input1{
+            height: 50px;
+            width: 105%;
+            margin-left: 10%;
+            font-size: 100%;
+
+        }
+
+        .contact{
+            margin-top: 2%;
+            margin-left: 8%;
+        }
+
+
+        .contact2{
+            padding-top: 2%;
+            margin-left: 8%;
+        }
+
+        .input2{
+            height: 108px;
+            width: 105%;
+            margin-left: 35%;
+            font-size: 100%;
+           
+
+        }
+
+        .col2{
+            margin-top: -8%;
+            margin-left: 50%;
+        }
+
+
+        .statement{
+            font-family: sans-serif;
+            font-size: 100%;
+            width: 80%;
+            padding-top: 3%;
+            margin-left: 12%;
+            text-align: justify;
+            line-height: 25px;
+        }
+
+
+        .table2{
+            width: 100%;
+            margin-left: 11%;
+            padding-top: 1%;
+        }
+
+        th{
+            font-size: 100%;
+            font-family:sans-serif;
+            padding: 1%;
+        
+        }
+
+        .table2 td{
+            height: 20px;
+            font-size: 100%;
+            font-family: sans-serif;
+            font-weight: 100;
+        }
+
+
+        .consent{
+            margin-top: 5%;
+            font-family: sans-serif;
+            
+            width: 80%;
+            margin-top: 2%;
+            margin-left: 12%;
+            font-size: 100%;
+        }
+
+        #size{
+            font-size: 100%;
+        }
+
+        #inputmargin{
+            margin-left: -2%;
+            margin-top: 5%;
+
+        }
+
+        
+        .message{
+            color:red;
+            font-weight:bold;
+            align:center;
+        }
+
+
+        input{
+           
+            text-align:justify;
+            padding-left:5px;
+            border:1.5px solid black;
+           
+        }
+
+
+        
+
+
+        
+
+        
+        
+
+        
+        
+    </style>
+
+</head>
+<body>
+    
+   <div class="message"> {{message}} </div>
+
+<div class="borderdiv">
+
+    
+    <div class="body">
+       
+
+        <div class="head">
+        
+
+            <h3>Agmatel India Private Limited</h3>
+            <pre>
+E-366, 2nd Floor, Vikas Marg, Block E, Nirman Vihar, Delhi, 110092
+Phone: +91 11 47185503 /04 , +91 11 4306 4306, Fax : +91 11 47185510
+Email : support@agmatel.com , website : www.agmatel.com
+            </pre>
+
+        </div>
+
+        <div class="headB">
+            <img src="https://images.crunchbase.com/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/ybbajblxu4szfbweaeuk">
+
+        </div>
+
+    </div>
+
+
+
+            <div class="content">
+
+                <h2><u>Installation Report</u></h2>
+            </div>
+
+                <div class="table">
+
+                <table style="width: 100%;" >
+
+                    <tr>
+                        <td>PO NO :- GEMC-511687730857180</td>
+                        <td style="padding-left: 9%;">PO Date:- 14-Aug-2023</td>
+
+                    </tr>
+                        
+
+
+                    </tr>
+                </table>
+
+                </div>
+
+        <div class="col1" style="position: relative;" >
+
+            <div class="contact">
+
+                <div style="float: left;">
+                    <h2 id="size" style="margin-top: 3%;">Contact Person</h2>
+                </div>
+
+                <div style="float: left;">
+                    <input name="contact_name" class="input1" type="text" value="{{mydata.contact_person_name}}" >
+                    
+                </div>
+            </div>
+
+
+            
+            <div class="contact2" style="clear: both;">
+
+                <div style="float: left;">
+                    <h2 id="size" style="margin-top: 5%;">Address </h2>
+                </div>
+
+                <div style="float: left;">
+                    <input name="address" class="input2" type="text" value="{{mydata.location_name}}" >
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+
+    <div class="col2" style="clear: both; position:absolute; ">
+
+                    
+                    <div class="contacta">
+
+                        <div style="float: left;">
+                            <h2 id="size" style="margin-top: 3%;">Delivery NO.</h2>
+                        </div>
+
+                        <div style="float: left;">
+                            <input value="{{mydata.aipl_dc_no}}" style="margin-left:23%;" class="input1" type="text" >
+                            
+                        </div>
+
+
+                        
+                    </div>
+
+
+        
+                <div class="contactb" style="clear: both; padding-top: 5%;">
+
+                    <div style="float: left;">
+                        <h2 id="size" style="margin-top: 3%;">Mobile NO.</h2>
+                    </div>
+
+                    <div style="float: left;">
+                        <input style="margin-left:28%;" class="input1" type="text" value="{{mydata.contact_no}}">
+                        
+                    </div>
+
+
+                    
+                </div>
+
+        
+                <div class="contactc" style="clear: both;padding-top: 5%;">
+
+                    <div style="float: left;">
+                        <h2 id="size" style="margin-top: 3%;">Installation Date</h2>
+                    </div>
+
+                    <div style="float: left;">
+                        <input style="margin-left: 12%;" class="input1" type="text">
+                        
+                    </div>
+
+
+                    
+                </div>
+
+
+    </div>
+
+                <div class="statement" style="clear: both;">
+
+                    
+            Against the above-mentioned purchase order, the items detailed below have been successfully commissioned after
+            installation and testing. The training as required has also been provided by the Agmatel India Pvt Ltd as per
+            specifications in the PO. All the supply/delivery/commissioning formalities under the contract/purchase order have been
+            fulfilled/complied by the Agmatel India Pvt Ltd.    
+                </div>
+
+
+            <div class="table2">
+                <table border="1.5px" style="width: 82%;">
+                    <th>Item</th>
+                    <th>Make/Model</th>
+                    <th>Qty</th>
+                    <th>Serial No</th>
+
+
+                    <tr>
+
+                        <td  style="text-align: center; width: 25%;">IO Device</td>
+                        <td style="text-align: center; width: 25%;">K7 End Point Protection</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.io_device}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">Multifunction Machines
+                            Mfm</td>
+                        <td style="text-align: center;">HP LaserJet Pro MFP
+                            M329dw Printer</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.multi_printer}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">HD Web Camera</td>
+                        <td style="text-align: center;">Zeb-Ultimate Pro (Web
+                            Camera)</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.hd_web_camera}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">Desktop Computers</td>
+                        <td style="text-align: center;">Acer Veriton M200-P500</td>
+                        <td style="text-align: center;">7</td>
+                        <td style="text-align: center;"><input value="{{mydata.computer_desktop}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">PA Systems</td>
+                        <td style="text-align: center;">Zeb-VA100 (PA System)</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.pa_system}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">BPE Line Interactive
+                            UPS with AVR of
+                            Rating 1.0 KVA</td>
+                        <td style="text-align: center;">BP 1000</td>
+                        <td style="text-align: center;">7</td>
+                        <td style="text-align: center;"><input value="{{mydata.ups_for_desktop}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">Interactive Flat Panel</td>
+                        <td style="text-align: center;">IFP6532-2 with ViewSonic
+                            OPS</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.interactive_panel}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">Wi-Fi Router</td>
+                        <td style="text-align: center;">AX1500 Smart Router</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.wifi_router}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+                    
+                    <tr>
+
+                        <td style="text-align: center;">Invertor with Batteries</td>
+                        <td style="text-align: center;">UXSW2000L2</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.invertor}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+
+
+
+                    <tr>
+
+                        <td style="text-align: center;">Device Managment</td>
+                        <td style="text-align: center;">DMA</td>
+                        <td style="text-align: center;">1</td>
+                        <td style="text-align: center;"><input value="{{mydata.dev_mgmt_app}}" style="width: 98%; height: 100%;" id="serialnumber" type="text"></td>
+
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+
+                <div class="consent">
+                    One Time Installation for Electricity, Networking & hardware equipment has been completed successfully as per the PO.
+
+
+                </div>
+
+
+
+            <div class="contact" style="float: left; margin-left:13%;">
+
+                <div style="float: left;">
+                    <h2 id="size" style="margin-top: 5%;">Engineer Signature</h2>
+                </div>
+
+                <div>
+                    <input  class="input1" type="text" id="inputmargin">
+                    
+                </div>
+
+            </div>
+
+
+
+                <div class="contact" style="float: left; margin-left: 28%;">
+
+                    <div style="float: left;">
+                        <h2 id="size" style="margin-top: 7%;">Customer Signature & Stamp</h2>
+                    </div>
+
+                    <div>
+                        <input  class="input1" type="text" id="inputmargin">
+                        
+                    </div>
+                </div>
+
+
+
+    
+</body>
+</html>

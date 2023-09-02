@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .content{
+            margin-top:10%;
+            border:2px solid black;
+        }
+
+        .message{
+            color:red;
+            font-weight:bold;
+        }
+        
+     
+        .submit{
+            width:100px;
+            height:30px;
+            font-family:sens-serif;
+            font-weight:bold;
+            border-radius:5%;
+            border:none;
+            background-color:#aab5ac;
+            cursor:pointer;
+        }
+
+        h1{
+            color:#103863;
+        }
+
+      
+        .submit:hover{
+            background-color:#79e0d3;
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+
+    <a href="/"><input class="submit" type="button" value="HOME"></a>
+
+    <div class="content">
+    <center>
+        <h1>Upload Excel attachment as a Database</h1>
+
+     <form method="post" action="upload"  enctype="multipart/form-data">   
+        {% csrf_token %} 
+  
+    <input style="margin-left:8%;"  type="file" name="upload">
+
+    <input type="submit" class="submit" value="Upload">
+        
+
+
+
+     </form>
+
+     <br><br>
+
+     <div class="message">{{msg}}</div>
+
+
+    </center>
+
+
+
+</div>
+    
+</body>
+</html>

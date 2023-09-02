@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .content{
+            margin-top:5%;
+            border:5px solid black;
+            width: 40%;
+            height: 300px;
+            margin-left: 28%;
+            justify-content: center;
+            align-items: center;
+        }
+        .id{
+            width:40%;
+            height:30px;
+            font-weight: bold;
+            padding-left: 2%;
+        }
+        h1{
+            font-family: sans-serif;
+            color:#f5372a;
+        }
+
+        
+        label{
+            font-weight:900;
+        }
+
+       
+
+
+        .submit{
+            width:100px;
+            height:30px;
+            font-family:sens-serif;
+            font-weight:bold;
+            border-radius:5%;
+            border:none;
+            background-color:#aab5ac;
+            margin-top:5%;
+            cursor:pointer;
+        }
+        .submit:hover{
+            background-color:#79e0d3;
+        }
+
+        hr{
+            margin-top:-1%;
+            border:1.5px solid black;
+            width:80%;
+        }
+
+       
+       
+
+
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+
+    <a href="admindash"> <input style="margin-left:1%; margin-top:0%;" class="submit" type="button" value="Admin Login" ></a>
+   
+
+    <div class="content">
+    <center>
+
+     <form method="post" action="form"  enctype="multipart/form-data">   
+        {% csrf_token %} 
+    <h1>Report Generator</h1>
+    <hr>
+
+    <div style="margin-top:25px;">
+
+    <label>School Id :</label>
+    
+    <input type="number" name="id" class="id" placeholder="ID">
+    <br> <br>
+    <input type="submit" class="submit">
+        <br><br>
+       <div>
+
+
+     </form>
+
+
+    </center>
+
+
+
+</div>
+    
+</body>
+</html>
